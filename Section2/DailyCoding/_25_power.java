@@ -19,4 +19,5 @@ public class _25_power {
 
         return result;
     }
+
 }

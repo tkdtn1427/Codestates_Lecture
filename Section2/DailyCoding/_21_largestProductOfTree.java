@@ -3,7 +3,7 @@ import java.util.*;
 
 public class _21_largestProductOfTree {
     public static void main(String[] args) {
-        int output = largestProductOfThree(new int[]{-5, -4, -3, -2, -1});
+        int output = largestProductOfThree(new int[]{-1, 2, -5, 7});
         System.out.println(output);
     }
 
@@ -35,6 +35,7 @@ public class _21_largestProductOfTree {
 //                    mino_n = cal_arr(Arrays.copyOfRange(mino,0,i));
 //                    plus_n = cal_arr(Arrays.copyOfRange(plus,plus.length-(3-i),plus.length));
 //                }
+//                System.out.println();
 //                result.add(mino_n*plus_n);
 //            }
 //        }

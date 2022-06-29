@@ -10,11 +10,21 @@ public class _24_isSubsetOf {
         System.out.println(result);
     }
     static boolean isSubsetOf(int[] base, int[] sample) {
-        String arr_str = Arrays.toString(base);
-        for(int tmp : sample){
-            if(!arr_str.contains(String.valueOf(tmp))){
-                return false;
-            }
+//        String arr_str = Arrays.toString(base);
+//        for(int tmp : sample){
+//            if(!arr_str.contains(String.valueOf(tmp))){
+//                return false;
+//            }
+//        }
+//        return true;
+
+        Map<Integer, String> list = new HashMap<>();
+        for(int tmp : base){
+            list.put(tmp,"valid");
+        }
+
+        for(int valid : sample){
+            if(!list.containsKey(valid)) return false;
         }
         return true;
     }
@@ -33,6 +43,24 @@ public class _24_isSubsetOf {
 //        }
 //        return true;
 //    }
+
+//=====================================================================
+
+//    public boolean isSubsetOf(int[] base, int[] sample) {
+//        //배열을 List로 변경후, List.contains 명령어를 사용하여 중복여부 검사
+//        List<Integer> intList
+//                = Arrays.stream(base)
+//                .boxed()
+//                .collect(Collectors.toList());
+//
+//        for (int i : sample) {
+//            if (!intList.contains(i)) {
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
+//
 }
 
 /*

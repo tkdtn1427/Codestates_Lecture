@@ -16,22 +16,42 @@ public class _26_treeDFS {
         output = dfs(root);
         System.out.println(output);
     }
+//    static ArrayList<String> dfs(tree node) {
+//        ArrayList<String> contain_ = new ArrayList<>();
+//        return dfs_re(node,contain_);
+//    }
+//
+//    static ArrayList<String> dfs_re(tree node, ArrayList<String> contain_){
+//        if(node == null) return contain_;
+//
+//        contain_.add(node.getValue());
+//        if(node.getChildrenNode() != null) {
+//            for (int i = 0; i < node.getChildrenNode().size(); i++) {
+//                contain_ = dfs_re(node.getChildrenNode().get(i),contain_);
+//            }
+//        }
+//        return contain_;
+//    }
+//============================================================================
+
     static ArrayList<String> dfs(tree node) {
-        ArrayList<String> contain_ = new ArrayList<>();
-        return dfs_re(node,contain_);
-    }
+        ArrayList<String> values = new ArrayList<>();
+        values.add(node.getValue());
 
-    static ArrayList<String> dfs_re(tree node, ArrayList<String> contain_){
-        if(node == null) return contain_;
-
-        contain_.add(node.getValue());
         if(node.getChildrenNode() != null) {
-            for (int i = 0; i < node.getChildrenNode().size(); i++) {
-                contain_ = dfs_re(node.getChildrenNode().get(i),contain_);
+            for(int i = 0; i < node.getChildrenNode().size(); i++) {
+                ArrayList<String> curList = dfs(node.getChildrenNode().get(i));
+                values.addAll(curList);
             }
         }
-        return contain_;
+        return values;
     }
+
+
+
+
+
+
 
     //아래 클래스의 내용은 수정하지 말아야 합니다.
     public static class tree {

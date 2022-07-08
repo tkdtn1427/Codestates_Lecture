@@ -51,8 +51,7 @@ public class _30_rotatedArraySearch {
 //            return false;
 //        }
 //    }
-
-//==========================================================================================
+//==================================================================================
 
     static int rotatedArraySearch(int[] rotated, int target) {
         int left = 0;
@@ -86,3 +85,9 @@ public class _30_rotatedArraySearch {
     }
 
 }
+
+//  5 6 7 8 9 10 2 3 4                10
+
+//
+
+//

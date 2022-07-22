@@ -17,10 +17,11 @@ public class _39_heapSort {
             sorting(arr,i);
         }
         int[] sol = Arrays.copyOfRange(arr,0,arr.length);
-        desc(sol,arr);
+        asc(sol,arr);
         return arr;
     }
 
+    //최소 힙소팅
     static void sorting(int[] arr, int idx){
         int origin = idx;
         while(idx!=0){
@@ -36,7 +37,8 @@ public class _39_heapSort {
         }
     }
 
-    static void desc(int[] sol, int[] arr){
+    //최소힙을 오름차순 정렬
+    static void asc(int[] sol, int[] arr){
         int idx= 0;
         for(int i=0; i<sol.length; i++){
             arr[i] = sol[0];
@@ -45,6 +47,7 @@ public class _39_heapSort {
         }
     }
 
+    //힙 소팅 정렬에서 루트값을 변경 후, 다시 최소힙으로 만들어주는 과정
     static int[] sorting2(int[] sol, int last, int idx) {
         //자식이 2개
         int left = idx*2+1;

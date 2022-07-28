@@ -9,7 +9,7 @@ public class _42_getItemFromTwoSortedArrays {
     }
 
 // 풀이를 보고 나서, 혼자서 코딩한 결과로 다시 혼자 풀어봐야 되는 문제
-    
+
 //    static int getItemFromTwoSortedArrays(int[] arr1, int[] arr2, int k) {
 //        int lidx = 0;
 //        int ridx = 0;

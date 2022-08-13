@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class _51_LCS {
     public static void main(String[] args) {
-        int output = LCS("acaykp", "capcak");
+        int output = LCS("abcd", "aceb");
         System.out.println(output);
     }
 
@@ -61,3 +61,5 @@ public class _51_LCS {
     }
 
 }
+
+//"acaykp", "capcak"

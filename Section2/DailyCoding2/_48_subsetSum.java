@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class _48_subsetSum {
     public static void main(String[] args) {
-        int output = subsetSum(new int[]{1, 10, 100, 50, 30}, 170);
+        int output = subsetSum(new int[]{20, 80, 99, 27, 35}, 100);
         System.out.println(output);
     }
 //    static int result;

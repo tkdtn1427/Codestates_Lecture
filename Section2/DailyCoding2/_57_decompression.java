@@ -6,6 +6,7 @@ import java.util.List;
 
 
 //Reset and Resolve
+//Code Refactoring
 public class _57_decompression {
     public static void main(String[] args) {
         int[][] image = new int[][]{

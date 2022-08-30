@@ -20,7 +20,7 @@ public class _57_decompression {
                 {1, 1, 1, 1, 0, 1, 1, 1}
         };
         String result = decompression(image);
-        System.out.println(result);
+//        System.out.println(result);
     }
 
     static StringBuilder result;

@@ -13,6 +13,6 @@ public class test {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringBuilder sb = new StringBuilder(br.readLine());
 
-              
+        System.out.println();
     }
 }

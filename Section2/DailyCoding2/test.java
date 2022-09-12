@@ -12,5 +12,8 @@ public class test {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringBuilder sb = new StringBuilder(br.readLine());
+
+        bw.flush();
+        bw.close();
     }
 }

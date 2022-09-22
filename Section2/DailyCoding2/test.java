@@ -15,9 +15,6 @@ public class test {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        Date test = new Date();
-        System.out.println(test);
-        int test2 = test.getDay();
-        System.out.println(test2);
+        LocalDate newDate = LocalDate.now();
     }
 }

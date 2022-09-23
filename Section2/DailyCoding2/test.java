@@ -16,5 +16,6 @@ public class test {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         LocalDate newDate = LocalDate.now();
+        System.out.println(newDate.getMonth().getValue());
     }
 }

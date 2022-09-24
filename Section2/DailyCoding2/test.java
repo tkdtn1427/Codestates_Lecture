@@ -16,6 +16,8 @@ public class test {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         LocalDate newDate = LocalDate.now();
-        System.out.println(newDate.getMonth().getValue());
+        System.out.println(newDate.getDayOfWeek().getValue());
+
+        System.out.println(LocalDate.parse("2022-03-11"));
     }
 }

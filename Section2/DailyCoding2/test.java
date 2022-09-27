@@ -17,8 +17,15 @@ public class test {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         LocalDate newDate = LocalDate.now();
-        System.out.println(newDate.getDayOfWeek().getValue());
+        System.out.println(isTrue("String is good"));
+        System.out.println(isTrue(43));
+    }
 
-        System.out.println(LocalDate.parse("2022-03-11", DateTimeFormatter.ISO_LOCAL_DATE));
+    static boolean isTrue(Object object){
+        if(object instanceof String){
+            return true;
+        }else{
+            return false;
+        }
     }
 }

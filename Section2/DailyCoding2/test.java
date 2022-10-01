@@ -14,13 +14,12 @@ public class test {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        List<String> list = new ArrayList<>();
-        isTrue(list);
+        Map<String, Long> test = new LinkedHashMap<>();
+        test.put("test", 1234l);
+        test.put("test",4321l);
+        System.out.println(test);
         System.out.println();
-    }
-
-    static boolean isTrue(List<String> list){
-        list.add("Srwer");
-        return true;
+        test.remove("test",1234l);
+        System.out.println(test);
     }
 }

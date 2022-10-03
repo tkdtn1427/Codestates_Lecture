@@ -19,7 +19,5 @@ public class test {
         test.put("test",4321l);
         System.out.println(test);
         System.out.println();
-        test.remove("test",1234l);
-        System.out.println(test);
     }
 }

@@ -16,8 +16,5 @@ public class test {
 
         Map<String, Long> test = new LinkedHashMap<>();
         test.put("test", 1234l);
-        test.put("test",4321l);
-        System.out.println(test);
-        System.out.println();
     }
 }

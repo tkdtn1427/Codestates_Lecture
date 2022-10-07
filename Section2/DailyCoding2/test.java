@@ -13,8 +13,9 @@ import java.util.*;
 public class test {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        Map<String, Long> test = new LinkedHashMap<>();
-        test.put("test", 1234l);
+        bw.flush();
+        bw.close();
     }
 }

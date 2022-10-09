@@ -15,7 +15,7 @@ public class test {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        String str = br.readLine();
+        String[] str = br.readLine().split("");
 
         bw.flush();
         bw.close();

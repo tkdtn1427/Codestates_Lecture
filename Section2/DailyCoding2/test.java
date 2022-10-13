@@ -16,6 +16,8 @@ public class test {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         String[] str = br.readLine().split("");
+        StringBuilder sb = new StringBuilder("");
+        Arrays.stream(str).forEach(per_str -> sb.append(per_str));
 
         bw.flush();
         bw.close();
